@@ -21,7 +21,7 @@ public class Workout {
     private Integer id;
 
     @Column(nullable = false)
-    private LocalDate workoutDate;
+    private LocalDate workoutDate = LocalDate.now();;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

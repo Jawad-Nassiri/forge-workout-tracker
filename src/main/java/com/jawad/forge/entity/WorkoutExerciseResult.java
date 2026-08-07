@@ -18,10 +18,10 @@ public class WorkoutExerciseResult {
     private Integer id;
 
     @Column(nullable = false)
-    private int sets;
+    private Integer sets;
 
     @Column(nullable = false)
-    private int reps;
+    private Integer reps;
 
     @Column(nullable = false)
     private BigDecimal weight;
