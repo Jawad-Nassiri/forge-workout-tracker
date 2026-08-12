@@ -24,4 +24,8 @@ public class ExerciseMapper {
                 exercise.getMuscleGroup().getId()
         );
     }
+
+    public void updateEntity(Exercise exercise, ExerciseRequestDTO dto) {
+        exercise.setName(dto.name());
+    }
 }

@@ -19,4 +19,8 @@ public class MuscleGroupMapper {
                 muscleGroup.getName()
         );
     }
+
+    public void updateEntity(MuscleGroup muscleGroup, MuscleGroupRequestDTO dto) {
+        muscleGroup.setName(dto.name());
+    }
 }

@@ -31,4 +31,11 @@ public class WorkoutExerciseResultMapper {
                 workoutExerciseResult.getExercise().getId()
         );
     }
+
+    public void updateEntity(WorkoutExerciseResult workoutExerciseResult, WorkoutExerciseResultRequestDTO dto) {
+        workoutExerciseResult.setSets(dto.sets());
+        workoutExerciseResult.setReps(dto.reps());
+        workoutExerciseResult.setWeight(dto.weight());
+    }
+
 }
