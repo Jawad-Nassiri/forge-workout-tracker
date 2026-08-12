@@ -24,4 +24,8 @@ public class MuscleGroup {
     @OneToMany(mappedBy = "muscleGroup")
     @JsonManagedReference
     private List<Exercise> exercises;
+
+    @OneToMany(mappedBy = "muscleGroup")
+    @JsonManagedReference
+    private List<WorkoutMuscleGroup> workoutMuscleGroups;
 }

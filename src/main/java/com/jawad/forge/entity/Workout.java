@@ -21,7 +21,7 @@ public class Workout {
     private Integer id;
 
     @Column(nullable = false)
-    private LocalDate workoutDate = LocalDate.now();;
+    private LocalDate workoutDate = LocalDate.now();
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -36,4 +36,8 @@ public class Workout {
     @OneToMany(mappedBy = "workout")
     @JsonManagedReference
     private List<WorkoutExerciseResult> workoutExerciseResults;
+
+    @OneToMany(mappedBy = "workout")
+    @JsonManagedReference
+    private List<WorkoutMuscleGroup> workoutMuscleGroups;
 }
